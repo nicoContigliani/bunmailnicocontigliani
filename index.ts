@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 import mailRoutes from './routes/mail.routes';
 import dotenv from 'dotenv';
-
+import resources from './routes/resourses.routes';
 // Middlewares para parsear el cuerpo de las solicitudes
 app.use(express.json()); // Para parsear application/json
 app.use(express.urlencoded({ extended: true })); // Para parsear application/x-www-form-urlencoded

@@ -14,9 +14,11 @@
     "typescript": "^5"
   },
   "scripts": {
-    "start": "bun index.js",
-    "dev": "bun --hot index.js",
-    "test": "bun test.js"
+    "start": "bun run index.ts",  
+    "dev": "bun --hot index.ts",  
+    "render-setup": "curl -fsSL https://bun.sh/install | bash", 
+    "render-build": "bun install",
+    "test": "bun test.ts"
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.17",
